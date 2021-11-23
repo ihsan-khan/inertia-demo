@@ -8,10 +8,9 @@
     <script src="{{ mix('/js/app.js') }}" defer></script>
   </head>
   <body>
-    <section class="p-8">
 
       @inertia
-    </section>
+   
 
     {{-- npm update vue-loader --}}
   </body>

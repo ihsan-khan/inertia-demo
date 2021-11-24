@@ -15,13 +15,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Home');
+    return Inertia::render('Home',[
+        'username' => 'john Doe'
+    ]);
 });
 
 Route::get('/users', function () {
-    return Inertia::render('Users',[
-        'time' => now()->toTimeString()
-    ]);
+    return Inertia::render('Users');
 });
 
 Route::get('/settings', function () {
